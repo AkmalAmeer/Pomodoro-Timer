@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="pomodoro timer.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+        <div class="theme-toggle">
+            <button id="themeSwitch">Switch Theme</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="timer">
+            <div class="time-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div class="session-counter">Session: <span id="sessionCount">1</span></div>
+            <button id="startPause">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        <div class="task-list">
+            <h3>Tasks for Today</h3>
+            <ul id="taskList">
+                <li><input type="text" id="newTask" placeholder="Add new task"></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed with focus in mind</p>
+    </footer>
+
+    <script src="pomodoro timer.js"></script>
+</body>
+
+</html>
